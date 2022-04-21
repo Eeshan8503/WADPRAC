@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            background-color: black;
+            transition-duration: 1s;
+
+        }
+        .ball1{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            border-radius: 250px;
+            background-color: maroon;
+            left: 0;
+            transition-duration: 1s;
+        }
+        .ball2{
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            border-radius: 62.5px;
+            background-color: blue;
+            right: 0;
+            transition-duration: 1s;
+
+        }
+        .container:active .ball1 {
+            left: 40%;
+        }
+        .container:active .ball2 {
+            right: 36.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+    </div>
+</body>
+</html>
